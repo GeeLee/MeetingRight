@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap 3, from LayoutIt!</title>
+
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/jquery.gridster.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+
+    <div class="row">
+    	<div class="col-md-12" style="height: 40px; background-color: #AAADB0;"> </div> 
+    </div>	
+
+    <div class="gridster">
+	    <ul>
+	        <li data-row="1" data-col="1" data-sizex="2" data-sizey="2">
+				<div style="border: 1px solid #CFCFCF; background-color: #FAFAFA;">
+					<h2>
+						Notes during the meeting
+					</h2>
+
+					<p>
+						<a class="btn" href="#">View details »</a>
+					</p>
+				</div>	        	
+	        </li>
+	        <li data-row="1" data-col="2" data-sizex="3" data-sizey="3" >
+				<div >
+					<div class="box1 ">
+					  <div class="box1header">Action items</div>
+					  <div class="box1content" contenteditable="true" id="actions_content" >
+					    [SD, CRC, MB]: create a short presentation on Slack for CC usage and overall team collaboration<BR>
+						[SD]: Move the labs server to low cost instance type<BR>
+						[MB]: Organise a discussion with Ionut Bujor about sharing AWS accounts<BR>
+						[CRC]:  talk to IT re: Eucalyptus setup<BR>
+						[SD]: Azure MSDN setup for India - check with IT India<BR>
+						[SD]: ask Jeff for the license file (send email)
+					  </div>
+					</div>
+				</div>		        	
+	        </li>
+	        <li data-row="2" data-col="1" data-sizex="2" data-sizey="2">
+	        	
+	        </li>
+	 
+
+	    </ul>
+	</div>
+
+	<HR><BR>
+
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/jquery.gridster.js"></script>
+    <script type="text/javascript">
+		$(function(){ //DOM Ready
+		 
+		    $(".gridster ul").gridster({
+		        widget_margins: [10, 10],
+		        widget_base_dimensions: [150, 150],
+		        resize: {
+		            enabled: true
+		          }
+		    });
+		 
+		});
+    </script>    
+    <script src="ckeditor/ckeditor.js"></script>
+	<script>
+ 
+//		CKEDITOR.inline( 'editor1' );
+//		CKEDITOR.inline( 'links_content' );
+		CKEDITOR.inline( 'actions_content' );
+    </script>
+  </body>
+</html>
